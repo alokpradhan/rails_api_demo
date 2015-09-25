@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+
+
+  root 'users#index'
+
+  resources :users
+  resources :addresses
+
+  constraints subdomain: 'api' do
+    namespace :api, path: '/' do
+      resources :sports_teams
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

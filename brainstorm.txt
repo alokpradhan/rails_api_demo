@@ -1,0 +1,15 @@
+Models:
+User
+ - has one sports team
+ - has many addresses
+Address
+ - has many users through user address join
+UserAddress Join
+  - has many users
+  - has many addresses
+SportsTeam
+ - has many users
+ - has one address
+
+Routes exposed to API
+Sports Teams
