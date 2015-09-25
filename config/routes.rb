@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   resources :users
   resources :addresses
 
-  constraints subdomain: 'api' do
-    namespace :api, path: '/' do
+  # constraints subdomain: 'api' do
+    namespace :api do #, path: '/'
       resources :sports_teams
-    end
+    # end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
