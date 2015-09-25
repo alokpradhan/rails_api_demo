@@ -36,7 +36,7 @@ def seedUsers
 
     User.create(first_name: Faker::Name.first_name,
                 last_name: Faker::Name.last_name,
-                fav_sports_team_id: sportsteams.sample.id)
+                sports_team_id: sportsteams.sample.id)
   end
 end
 
