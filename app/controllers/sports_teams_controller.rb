@@ -2,6 +2,8 @@ module API
 
   class SportsTeamsController < ApplicationController
 
+    respond_to :json
+
     def index
 
       @sports_teams = SportsTeam.all
