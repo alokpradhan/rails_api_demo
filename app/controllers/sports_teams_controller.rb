@@ -1,4 +1,4 @@
-module API
+# module API
 
   class SportsTeamsController < ApplicationController
 
@@ -29,4 +29,4 @@ module API
 
   end
 
-end
+# end
