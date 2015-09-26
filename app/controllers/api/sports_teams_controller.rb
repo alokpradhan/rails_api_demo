@@ -43,8 +43,7 @@ module API
       end
 
       if capacity = params[:stadium_capacity]
-        result = {}
-        @sports_teams = @sports_teams.where('stadium_size >=?', capacity)
+        @sports_teams = @sports_teams.where('stadium_size >= ?', capacity)
       end
 
       render json: @sports_teams, status: 200
