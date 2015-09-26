@@ -1,1 +1,40 @@
 <h1>Welcome to the Sports Team API</h1>
+
+<h3>Endpoints:</h3>
+
+1. GET all team data
+https://desolate-sierra-3045.herokuapp.com/sports_teams
+
+2. GET specific information:
+- name
+parameter: team
+string: https://desolate-sierra-3045.herokuapp.com/sports_teams?team=Indiana+goats
+
+- trophies
+parameter: trophies
+string: https://desolate-sierra-3045.herokuapp.com/sports_teams?trophies=10
+
+parameter: minimum_trophies
+string: https://desolate-sierra-3045.herokuapp.com/sports_teams?minimum_trophies=5
+
+- city
+parameter: city
+string: https://desolate-sierra-3045.herokuapp.com/sports_teams?city=Fletaview
+
+- state
+parameter: state
+string: https://desolate-sierra-3045.herokuapp.com/sports_teams?country=Alabama
+
+- fan count
+parameter: fans, team (by a selected team)
+string: https://desolate-sierra-3045.herokuapp.com/sports_teams?team=Indiana+goats&fans=true
+parameter: fans
+
+parameter: fans (total count by team)
+string: https://desolate-sierra-3045.herokuapp.com/sports_teams?fans=true
+
+- minimum stadium capacity
+parameter: capacity
+string: https://desolate-sierra-3045.herokuapp.com/sports_teams?stadium_capacity>10000
+
+
